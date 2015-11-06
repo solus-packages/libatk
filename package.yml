@@ -1,0 +1,22 @@
+name        : atk
+version     : 2.18.0
+release     : 8
+source     :
+    - http://ftp.acc.umu.se/pub/gnome/sources/atk/2.18/atk-2.18.0.tar.xz : ce6c48d77bf951083029d5a396dd552d836fff3c1715d3a7022e917e46d0c92b
+license     :
+    - GPL-3.0
+summary     : Accessibility toolkit
+builddeps   :
+    - pkgconfig(gobject-2.0)
+replaces    :
+    - libatk
+    - devel: libatk-devel
+    - docs: libatk-docs
+description : |
+    ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

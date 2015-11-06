@@ -1,0 +1,73 @@
+<PISI>
+    <Source>
+        <Name>atk</Name>
+        <Packager>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <Summary xml:lang="en">Accessibility toolkit</Summary>
+        <Description xml:lang="en">ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>atk-devel</Name>
+        <Summary xml:lang="en">Development files for atk</Summary>
+        <Description xml:lang="en">ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="current">atk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig</Path>
+        </Files>
+        <Replaces>
+            <Package>libatk-devel</Package>
+        </Replaces>
+    </Package>
+    <Package>
+        <Name>atk</Name>
+        <Summary xml:lang="en">Accessibility toolkit</Summary>
+        <Description xml:lang="en">ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
+</Description>
+        <PartOf>desktop.gtk</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/girepository-1.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+        </Files>
+        <Replaces>
+            <Package>libatk</Package>
+        </Replaces>
+    </Package>
+    <Package>
+        <Name>atk-docs</Name>
+        <Summary xml:lang="en">Documentation for atk</Summary>
+        <Description xml:lang="en">ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
+</Description>
+        <PartOf>programming.docs</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="current">atk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+        <Replaces>
+            <Package>libatk-docs</Package>
+        </Replaces>
+    </Package>
+    <History>
+        <Update release="8">
+            <Date>2015-11-06</Date>
+            <Version>2.18.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>

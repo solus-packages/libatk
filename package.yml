@@ -1,6 +1,6 @@
 name        : libatk
 version     : 2.18.0
-release     : 10
+release     : 11
 source     :
     - http://ftp.acc.umu.se/pub/gnome/sources/atk/2.18/atk-2.18.0.tar.xz : ce6c48d77bf951083029d5a396dd552d836fff3c1715d3a7022e917e46d0c92b
 license     :

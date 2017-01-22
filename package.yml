@@ -1,8 +1,8 @@
 name       : libatk
-version    : 2.20.0
-release    : 14
+version    : 2.22.0
+release    : 15
 source     :
-    - http://ftp.acc.umu.se/pub/gnome/sources/atk/2.20/atk-2.20.0.tar.xz : 493a50f6c4a025f588d380a551ec277e070b28a82e63ef8e3c06b3ee7c1238f0
+    - http://ftp.acc.umu.se/pub/gnome/sources/atk/2.22/atk-2.22.0.tar.xz : d349f5ca4974c9c76a4963e5b254720523b0c78672cbc0e1a3475dbd9b3d44b6
 license    :
     - GPL-3.0
 summary    : Accessibility toolkit
@@ -12,6 +12,7 @@ builddeps  :
     - glibc-32bit-devel
     - libgcc-32bit
 emul32     : yes
+component  : desktop.gtk
 replaces   :
     - atk
     - devel : atk-devel

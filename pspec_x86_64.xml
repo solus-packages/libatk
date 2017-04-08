@@ -35,7 +35,7 @@
 </Description>
         <PartOf>emul32</PartOf>
         <RuntimeDependencies>
-            <Dependency release="16">libatk</Dependency>
+            <Dependency release="17">libatk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/</Path>
@@ -49,8 +49,8 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="16">libatk-devel</Dependency>
-            <Dependency release="16">libatk-32bit</Dependency>
+            <Dependency release="17">libatk-devel</Dependency>
+            <Dependency release="17">libatk-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/lib*.so</Path>
@@ -64,7 +64,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="16">libatk</Dependency>
+            <Dependency release="17">libatk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -89,9 +89,9 @@
         </Replaces>
     </Package>
     <History>
-        <Update release="16">
+        <Update release="17">
             <Date>2017-04-08</Date>
-            <Version>2.24.0</Version>
+            <Version>2.22.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Joshua Strobl</Name>
             <Email>joshua@stroblindustries.com</Email>

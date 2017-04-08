@@ -1,24 +1,23 @@
 name       : libatk
-version    : 2.22.0
-release    : 15
+version    : 2.24.0
+release    : 16
 source     :
-    - http://ftp.acc.umu.se/pub/gnome/sources/atk/2.22/atk-2.22.0.tar.xz : d349f5ca4974c9c76a4963e5b254720523b0c78672cbc0e1a3475dbd9b3d44b6
-license    :
-    - GPL-3.0
+    - http://ftp.acc.umu.se/pub/gnome/sources/atk/2.24/atk-2.24.0.tar.xz : bb2daa9a808c73a7a79d2983f333e0ba74be42fc51e3ba1faf2551a636487a49
+license    : GPL-3.0
+component  : desktop.gtk
 summary    : Accessibility toolkit
+description: |
+    ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
 builddeps  :
     - pkgconfig(gobject-2.0)
     - pkgconfig32(gobject-2.0)
     - glibc-32bit-devel
     - libgcc-32bit
 emul32     : yes
-component  : desktop.gtk
 replaces   :
     - atk
     - devel : atk-devel
     - docs : atk-docs
-description: |
-    ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
 setup      : |
     %configure --disable-static --prefix=/usr
 build      : |

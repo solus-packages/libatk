@@ -1,8 +1,8 @@
 name       : libatk
-version    : 2.22.0
-release    : 17
+version    : 2.26.0
+release    : 18
 source     :
-    - http://ftp.acc.umu.se/pub/gnome/sources/atk/2.22/atk-2.22.0.tar.xz : d349f5ca4974c9c76a4963e5b254720523b0c78672cbc0e1a3475dbd9b3d44b6
+    - https://download.gnome.org/sources/atk/2.26/atk-2.26.0.tar.xz : eafe49d5c4546cb723ec98053290d7e0b8d85b3fdb123938213acb7bb4178827
 license    : GPL-3.0
 component  : desktop.gtk
 summary    : Accessibility toolkit

@@ -1,6 +1,6 @@
 name       : libatk
 version    : 2.36.0
-release    : 24
+release    : 25
 source     :
     - https://download.gnome.org/sources/atk/2.36/atk-2.36.0.tar.xz : fb76247e369402be23f1f5c65d38a9639c1164d934e40f6a9cf3c9e96b652788
 license    : GPL-3.0-or-later
@@ -10,14 +10,17 @@ description: |
     ATK provides the set of accessibility interfaces that are implemented by other toolkits and applications. Using the ATK interfaces, accessibility tools have full access to view and control running applications.
 builddeps  :
     - pkgconfig32(gobject-2.0)
-    - gtk-doc
 emul32     : yes
 replaces   :
     - atk
     - devel : atk-devel
-    - docs : atk-docs
 setup      : |
-    %meson_configure -Ddocs=true
+    if [[ ! -z "${EMUL32BUILD}" ]]; then
+        build_gobject=false
+    else
+        build_gobject=true
+    fi
+    %meson_configure -Dintrospection=$build_gobject
 build      : |
     %ninja_build
 install    : |

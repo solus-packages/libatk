@@ -89,6 +89,7 @@ libatk-1.0.so.0:atk_key_event_type_get_type
 libatk-1.0.so.0:atk_layer_get_type
 libatk-1.0.so.0:atk_misc_get_instance
 libatk-1.0.so.0:atk_misc_get_type
+libatk-1.0.so.0:atk_misc_instance
 libatk-1.0.so.0:atk_misc_threads_enter
 libatk-1.0.so.0:atk_misc_threads_leave
 libatk-1.0.so.0:atk_no_op_object_factory_get_type
